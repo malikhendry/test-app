@@ -49,6 +49,15 @@ export default function PostPageUpdate() {
 
   return (
     <div>
+
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/login">Log In</a></li>
+    <li><a href="/signup">Sign Up</a></li>
+  </ul>
+</nav>
+
       <Navbar variant="light" bg="light">
         <Container>
           <Navbar.Brand href="/">Tinkergram</Navbar.Brand>

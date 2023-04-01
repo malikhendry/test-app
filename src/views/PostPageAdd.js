@@ -36,6 +36,16 @@ export default function PostPageAdd() {
 
   return (
     <>
+    <nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/login">Log In</a></li>
+    <li><a href="/signup">Sign Up</a></li>
+  </ul>
+</nav>
+
+
+
       <Navbar variant="light" bg="light">
         <Container>
           <Navbar.Brand href="/">Tinkergram</Navbar.Brand>
@@ -48,7 +58,7 @@ export default function PostPageAdd() {
       <Container>
         <h1 style={{ marginBlock: "1rem" }}>Add Post</h1>
         <Form>
-          <Form.Group className="mb-3" controlId="caption">
+<Form.Group className="mb-3" controlId="caption">
             <Form.Label>Caption</Form.Label>
             <Form.Control
               type="text"
@@ -78,12 +88,14 @@ export default function PostPageAdd() {
                 setPreviewImage(previewImage);
               }}
               />
-
+             
           </Form.Group>
           <Button variant="primary" onClick={async (e) => addPost()}>
             Submit
           </Button>
         </Form>
+
+        
       </Container>
     </>
   );

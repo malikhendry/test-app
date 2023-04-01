@@ -13,7 +13,10 @@ export default function LoginPage() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
- return (
+  
+  return (
+    
+    
     <Container>
       <h1 className="my-3">Login to your account</h1>
       <Form>
@@ -51,6 +54,7 @@ export default function LoginPage() {
                 navigate("/");
               } catch (error) {
                 setError(error.message);
+                
               }
           }}
         >

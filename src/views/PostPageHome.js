@@ -36,6 +36,8 @@ export default function PostPageHome() {
 </nav>
 
 
+
+
       <Navbar variant="light" bg="light">
         <Container>
           <Navbar.Brand href="/">Tinkergram</Navbar.Brand>
@@ -62,6 +64,7 @@ function ImageSquare({ post }) {
         width: "18rem",
         marginLeft: "1rem",
         marginTop: "2rem",
+        
       }}
     >
       <Image
@@ -71,6 +74,9 @@ function ImageSquare({ post }) {
           width: "18rem",
           height: "18rem",
         }}
+
+        
+        
       />
     </Link>
   );
